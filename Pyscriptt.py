@@ -2,10 +2,6 @@ import requests
 import time
 import json
 
-
-# Example log messages
-logging.info('This is an info message')
-#logging.warning('This is a warning message')
 tmn=1000
 pepe=0
 while(1):
