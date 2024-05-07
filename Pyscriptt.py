@@ -1,6 +1,15 @@
 import requests
 import time
 import json
+import logging
+
+# Configure logging
+logging.basicConfig(level=logging.INFO, filename='app.log', filemode='w',
+                    format='%(name)s - %(levelname)s - %(message)s')
+
+# Example log messages
+logging.info('This is an info message')
+#logging.warning('This is a warning message')
 tmn=1000
 pepe=0
 while(1):
@@ -27,7 +36,7 @@ while(1):
 			   tmn = tmn + (pepep-pepe)*temp2
 			   print(1000,tmn)
 			   temp=temp2
-		print("tmn=",tmn+pepe*float(outt['c'][-1]))
+		logging.info("tmn=",tmn+pepe*float(outt['c'][-1]))
 		time.sleep(60)
 	
 
