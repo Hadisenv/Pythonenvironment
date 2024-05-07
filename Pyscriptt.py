@@ -1,11 +1,7 @@
 import requests
 import time
 import json
-import logging
 
-# Configure logging
-logging.basicConfig(level=logging.INFO, filename='app.log', filemode='w',
-                    format='%(name)s - %(levelname)s - %(message)s')
 
 # Example log messages
 logging.info('This is an info message')
@@ -36,7 +32,7 @@ while(1):
 			   tmn = tmn + (pepep-pepe)*temp2
 			   print(1000,tmn)
 			   temp=temp2
-		logging.info("tmn=%s", tmn+pepe*float(outt['c'][-1]))
+		print("tmn=%s", tmn+pepe*float(outt['c'][-1]))
 		time.sleep(60)
 	
 
