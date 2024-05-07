@@ -36,7 +36,7 @@ while(1):
 			   tmn = tmn + (pepep-pepe)*temp2
 			   print(1000,tmn)
 			   temp=temp2
-		logging.info("tmn=",tmn+pepe*float(outt['c'][-1]))
+		logging.info("tmn=%s", tmn+pepe*float(outt['c'][-1]))
 		time.sleep(60)
 	
 
